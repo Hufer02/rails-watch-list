@@ -3,10 +3,11 @@
     <div class="new-list">
       <h1 class = "mt-4">Create a new <strong>bookmark</strong> !</h1>
       <%= simple_form_for [ @list, @bookmark ] do |f| %>
-        <%= f.input :comment %>
         <%= f.association :movie %>
+        <%= f.input :comment %>
         <%= f.submit "Submit", class: "btn btn-primary" %>
       <% end %>
     </div>
   </div>
+  <%= link_to "Your lists", lists_path, class:"btn btn-flat" %>
 </div>

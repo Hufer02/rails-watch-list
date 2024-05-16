@@ -2,11 +2,15 @@
   <div class=""><h1>Welcome to your watchlist ! </h1></div>
     <div class="card mt-5 mb-5">
 
+<% if @lists.empty? %>
+<h2>You don't have any list saved !</h2>
+<% else %>
     <ul>
       <% @lists.each do |list| %>
         <li><%= link_to list.name, list_path(list) %></li>
       <% end %>
     </ul>
+<% end %>
 
   </div>
 <%= link_to "Create a new list", new_list_path %>
