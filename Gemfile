@@ -64,6 +64,10 @@ end
 
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 832a7ff835936b5437ed60f3e014a6c354243f15
 gem "bootstrap", "~> 5.2"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
